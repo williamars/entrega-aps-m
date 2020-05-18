@@ -138,7 +138,7 @@ public class GateView extends FixedPanel implements ItemListener, MouseListener 
 
         super.paintComponent(g);
 
-        g.drawImage(image, 30, 70, 180, 100, this);
+        g.drawImage(image, 30, 70, 170, 100, this);
 
         g.setColor(light.getColor());
         g.fillOval(205, 107, 25, 25);
