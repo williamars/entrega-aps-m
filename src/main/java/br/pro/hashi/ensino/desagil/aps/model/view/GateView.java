@@ -42,21 +42,6 @@ public class GateView extends FixedPanel implements ItemListener, MouseListener 
             entradas[i] = new Light(0, 0, 0);
             i++;
         }
-////            entradas[i] = new JCheckBox();
-////            entradas[i].setMnemonic(KeyEvent.VK_C);
-////            entradas[i].setSelected(false);
-//            if (gate.getInputSize() > 1) {
-//                if (i == 0) {
-////                    add(entradas[i], 20, 87, 20, 25);
-//                } else if (i == 1) {
-////                    add(entradas[i], 20, 127, 20, 25);
-//                }
-//            } else if (gate.getInputSize() == 1) {
-////                add(entradas[i], 20, 107, 20, 25);
-//            }
-//            i++;
-//        }
-
         light = new Light(255, 0, 0);
 
         String name = gate.toString() + ".png";
@@ -68,12 +53,6 @@ public class GateView extends FixedPanel implements ItemListener, MouseListener 
             gate.connect(c, switches[c]);
             c++;
         }
-
-//        int d = 0;
-//        while (d < gate.getInputSize()) {
-//            entradas[d].addItemListener(this);
-//            d++;
-//        }
 
         addMouseListener(this);
 
